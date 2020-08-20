@@ -1,0 +1,566 @@
+css
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*,body,li,ul,section,main,form,select,p,h1,h2,h3,h4,h5,h6,a,span,article,aside
+ {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+     margin: 0;
+     padding:0;
+     font-size: 10px;
+     font-family:"Helvitica Neue", Helvitica, arial, sans-serif;
+}
+ul, li{
+  list-style-type:none ;
+}
+
+a{
+  text-decoration: none;
+}
+
+.clearFix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.floatL{
+  display: block;
+  float:left;
+}
+
+.floatR{
+  display: block;
+  float:right;
+}
+.border{
+  border:1px solid black;
+}
+.block{
+  display:block;
+}
+.zeroMarginPadding{
+  margin: 0;
+  padding: 0;
+}
+
+.borderBox{
+  box-sizing: border-box;
+}
+
+
+header{
+}
+nav{
+  background-color: rgb(255,255,255);
+  /* padding-left: 4.5%; */
+}
+nav a{
+  display: inline-block;
+  width: 11%;
+  font-size: 1.2rem;
+  color: black;
+  text-align:center;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+}
+.nav2 i{
+  display: inline-block;
+  margin-left: 10%;
+}
+.nav2 a{
+  display: inline-block;
+  margin-right: 10.5%;
+}
+.nav2{
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+.showcase{
+  padding-top: 4.5rem;
+}
+.showcase h1{
+  text-align: center;
+  margin-bottom:2.8rem;
+}
+.showcase h2{
+  font-size: 1.8rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+.showcase p{
+    font-size: 1.4rem;
+    margin-bottom:2.8rem;
+}
+.showcase span{
+  display: inline-block;
+  font-size: 1.1rem;
+  padding-bottom: .75rem;
+}
+.showcaseContainer{
+  margin-left: 8%;
+}
+.showcase input{
+  height: 3rem;
+  border-radius: 4px;
+  display: inline-block;
+  width: 65%;
+  float: left;
+}
+.showcase .button{
+  padding-top: .8rem;
+  padding-bottom: 1rem;
+  border-radius: 4px;
+  display: inline-block;
+  width: 30%;
+  float: right;
+  text-align: center;
+}
+
+.logo{
+  width: 48%;
+}
+.logo2{
+  width:220px;
+}
+.person{
+  /* width: 31.4%; */
+  width: 70%;
+}
+.showcase2 h2{
+  font-size: 1.8rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+.showcase2 p{
+    font-size: 1.4rem;
+    margin-bottom:1.6rem;
+}
+.showcase2 span{
+  display: inline-block;
+  font-size: 1.1rem;
+  padding-bottom: .75rem;
+}
+.showcase2 input{
+  height: 2.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  width: 30%;
+  float: left;
+}
+.showcase2 .buttonM{
+  padding-top: .8rem;
+  padding-bottom: .7rem;
+  border-radius: 3px;
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  Color:white;
+  border: 1px solid gray;
+}
+section.mL2{
+  margin-bottom: 3rem;
+}
+
+.section1 h2{
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom:3.5rem;
+}
+.section1 p{
+  font-size: 1.4rem;
+  margin-bottom:3.5rem;
+}
+.section1 span{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.4rem
+}
+.section1 p.lightGrayText{
+  font-style:italic;
+  font-size: 1.1rem;
+  text-align:center;
+  margin-bottom:5rem;
+  float:left;
+  width: 100%;
+}
+.section1>section{
+  margin-left: 12.5%;
+}
+
+/* history */
+.history{
+  padding-top: 2rem;
+}
+.history h2{
+  font-size: 1.8rem;
+  padding-top: 2.2rem;
+  padding-bottom:.75rem;
+}
+.historyImages{
+  width:100%;
+}
+.history p{
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+}
+.history > section{
+  margin-bottom:4rem;
+  margin-left: 7%;
+}
+.history .thirtyFive p{
+  text-align: center;
+}
+
+/* history mobile */
+.historyM h2{
+  font-size: 1.8rem;
+  padding-top: 2.2rem;
+  padding-bottom:.75rem;
+  text-align: center;
+}
+.historyM p{
+  font-size: 1.3rem;
+  font-weight: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.mL{
+  margin-left: 25%;
+}
+.mL2{
+  margin-left:10%;
+}
+.historyM .caption{
+  text-align: center;
+  font-style:italic;
+  font-weight: 600;
+  margin-bottom: .6rem;
+}
+
+
+
+/*  */
+
+.section3 h2{
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 3.5rem;
+  padding-bottom:3rem;
+}
+.section3 h3{
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.section3 p{
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  padding-right: 1rem;
+}
+.section3Image{
+  width: 100%;
+}
+.section3 section.eightySix{
+  margin-left: 7%;
+  margin-bottom: 1.8rem;
+  padding:3.2%;
+}
+
+
+section.signUp{
+  padding:1rem 0 1rem 0;
+}
+.signUp p{
+  font-size: 1.4rem;
+  /* display: inline-block; */
+  margin-top: 1.2rem;
+
+}
+.signUp input{
+  margin-left: 1%;
+  height: 3.4rem;
+  border-radius: 4px;
+  display: inline-block;
+  width:60%;
+}
+.signUpBg-Color .button{
+  background-color: rgb(145,156,162);
+  padding-top:.9rem;
+  padding-bottom:.9rem;
+  font-size: 1.4rem;
+  color: white;
+  border:1px solid gray;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  width: 35%;
+  /* margin-left: 2.5%; */
+}
+section.signUp>section.seventyFive{
+  margin-left: 12.5%;
+}
+
+
+footer{
+  background-color: rgb(145,156,162);
+  color: white;
+  font-size: 1.1rem;
+}
+footer a{
+  color: white;
+  font-size: 1.1rem;
+}
+footer p{
+  font-size: 1.1rem;
+}
+footer ul{
+  line-height: 1.3rem;
+  /* padding-right: 3rem; */
+}
+footer section.thirty{
+  margin-left: 3.3%;
+}
+
+footer section.floatR a{
+  display: inline-block;
+  width: 20%;
+  margin-left: 5%;
+}
+
+footer>section a{
+  padding-left: 2rem;
+}
+footer > section{
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid white;
+}
+footer section.seventyFive{
+  margin-left: 12.5%;
+}
+.bold{
+  font-weight: bold;
+}
+
+/* Clear fix hack */
+
+
+
+
+.button1{
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  color: white;
+}
+.button{
+  padding-top:.6rem;
+  padding-bottom:.6rem;
+  font-size: 1.2rem;
+  color: white;
+  border:1px solid gray;
+}
+/* WIDTH */
+
+
+.seventeen{
+  width:17%;
+}
+.twenty{
+  width:20%;
+}
+.quarter{
+  width:25%;
+}
+.thirty{
+  width:30%;
+}
+.third{
+  width:33.33%;
+}
+.thirtyFive{
+  width:35%;
+}
+.forty{
+  width:40%;
+}
+.fortyTwo{
+  width: 42%;
+}
+.fortyFour{
+  width:44%;
+}
+.fortyEight{
+  width:48%;
+}
+.fifty{
+  width:50%;
+}
+.fiftySix{
+  width: 56%;
+}
+.sixty{
+  width:60%;
+}
+.sixtyFour{
+  width:64%;
+}
+
+.seventy{
+  width:70%;
+}
+.seventyFive{
+  width: 75%;
+}
+.eightySix{
+  width:86%;
+}
+.full{
+  width:100%;
+}
+
+/* COLOR */
+.darkGrayBG{
+  background-color: rgb(52,57,65);
+}
+.lightGrayBG1{
+  background-color: rgb(186,197,206);
+}
+.lightGrayBG2{
+  background-color: rgb(241,243,245);
+}
+.signUpBg-Color{
+  background-color: rgb(186,197,206);
+  color: white;
+}
+
+.blackBG{
+  background-color: black;
+}
+.moroonBG{
+  background-color: rgba(93, 15, 50, 1);
+}
+.brownBG{
+  background-color: rgba(38, 28, 33, 1)
+}
+.border{
+  border: 1px solid gray;
+}
+.borderR{
+  border-right: 1px solid gray;
+}
+.borderB{
+  border-bottom: 1px solid gray;
+}
+.white{
+  color:white;
+}
+.red{
+  color:red;
+}
+.yellow{
+  color:rgba(243, 253, 83, 1);
+}
+.captionWhite{
+  color: rgb(241,241,241);
+}
+.whiteBG{
+  color: rgb(255, 255, 255);
+}
+.paragraphColor{
+  color:rgb(231,232,233);
+}
+.navy{
+  color: rgb(105,118,136);
+}
+.darkBG{
+  color: rgb(24,31,41);
+}
+.grayBG{
+  color: rgb(220,223,226);
+}
+.navyBox{
+  color: rgb();
+}
+.lightGrayText{
+  color: rgb(186,197,206);
+}
+
+.marginAuto{
+  margin:auto;
+}
+.inBLock{
+  display: inline-block;
+}
+.hidden{
+  display: none;
+}
+@media (max-width:860px){
+  .showcase.visible{
+    display: none;
+  }
+  .showcase2.hidden{
+    display: block;
+  }
+  section.section3{
+    display: none;
+  }
+  section.change{
+    width: 100%;
+  }
+  .signUp{
+    display: none;
+  }
+  section.historyM section.seventyFive{
+    width: 90%;
+    /* margin-left: 2%; */
+  }
+  section.historyM section.seventyFive>section.mL{
+    margin-left: 10%;
+  }
+
+}
+
+@media (max-width:1113px){
+  header nav.visible{
+    display: none;
+  }
+  .nav2{
+    display: block;
+  }
+  .social{
+    display: none;
+  }
+}
+
+@media (max-width:1336px){
+  .person{
+    width: 100%;
+  }
+  section.historyM.hidden{
+    display: block;
+  }
+  section.lightGrayBG2.history{
+    display: none;
+  }
+}
+
+
+
+@media (max-width:1536px){
+  .extraFooterLinks{
+    display: none;
+  }
+}
